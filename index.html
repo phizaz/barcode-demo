@@ -16,7 +16,10 @@
     <svg id="barcode"></svg>
 
     <script>
-        JsBarcode("#barcode", 1234567890, {
+        function getRandomInt(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+        JsBarcode("#barcode", getRandomInt(1000000, 99999999), {
             width: 4,
             height: 120,
             displayValue: true
