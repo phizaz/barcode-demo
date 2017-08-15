@@ -1,4 +1,5 @@
 $(function () {
+
     var resultCollector = Quagga.ResultCollector.create({
         capture: true,
         capacity: 20,
@@ -21,6 +22,7 @@ $(function () {
             return true;
         }
     });
+
     var App = {
         init: function () {
             var self = this;
